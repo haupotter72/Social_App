@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:id="@+id/messageLayout"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+
+            android:src="@drawable/ic_default_img"
+            app:civ_border_color="@null" />
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09/12/2023 2:47PM"
+            android:textColor="#CB0DFF"
+            android:textStyle="bold|italic"
+            android:textSize="14sp"
+            />
+
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_sender"
+            android:padding="15dp"
+            android:text="His Message"
+            android:textColor="@color/colorblack"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/isSeenTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="delivered"
+        android:textAlignment="textEnd"
+        android:textColor="#CB0DFF"
+        android:textStyle="bold|italic"
+
+       />
+
+
+
+
+
+
+</LinearLayout>

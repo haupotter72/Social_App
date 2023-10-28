@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7DEAE1"
+    tools:context=".LoginMainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontStyle="italic"
+        android:text="Login Here !"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="45sp"
+
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/login"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/emailTTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true">
+
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingTop="24sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/passwordlTTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailTTL"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:passwordToggleEnabled="true">
+
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="24sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlTTL"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="12sp"
+        android:text="Login"
+
+        />
+    <!--    login with google-->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleLogin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="12sp">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+
+
+
+
+
+    <!--    TextView: click go to recover pass-->
+    <TextView
+        android:id="@+id/recoverPassTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/googleLogin_btn"
+
+        android:text="Forgot Password ? Recover Here !"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"
+
+
+        android:textStyle="bold" />
+
+
+    <!--    TextView: click go to RegisterActivity-->
+    <TextView
+        android:id="@+id/nothave_accountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recoverPassTv"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+
+        android:text="Not Have Account? Register Here !"
+
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>
